@@ -200,7 +200,7 @@ flex-direction: column;
     align-items: center;
     h1, p{
         color: #fff;
-        text-align: center;
+        
     }
     h1{
         font-size: 3rem;
@@ -215,13 +215,81 @@ flex-direction: column;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 20% 0 20%;
     h1{
         color: #fff;
-        font-size: 4rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
         
     }
+    p{
+        color: #fff;
+        font-size: 1.4rem;
+    }
 }
-.faq{
+.accordin{
+background: #303030;
+width: 100%;
+transition: 0.5s;
+padding: 20px;
+cursor: pointer;
+color: #fff;
+text-align: left;
+font-size: 1.5rem;
 
+
+&::after{
+    content: '\02795';
+    font-size: 1.2rem;
+    float: right;
+}
+}
+
+  
+.panel{
+    padding: 20px;
+    display: none;
+    overflow: hidden;
+    background: #303030;
+    font-size: 1.4rem;
     
+    a{
+        color: #fff;
+        font-size: 1.4rem;
+    }
+}
+.downform{
+    width: 100%;
+    display: flex;
+    margin: 1.2rem 0 2rem 0;
+    justify-content: center;
+    input{
+        width: 55%;
+        height: 48px;
+        padding-left: 0.4rem;
+        font-size: 1rem;
+    }
+    
+   a{
+       text-decoration: none;
+       font-size: 1.2rem;
+       background: $redcolor;
+       color: #fff;
+       height: 48px;
+       width: 15%;
+       margin-left: -50px;
+       padding: 0 5px;
+       display: flex;
+       align-items: center;
+    
+
+       &:hover{
+           background: lighten($redcolor, 4%);
+       }
+      
+   }
+}
+.dtext{
+    color: #fff;
+    font-size: 1.3rem;
 }
